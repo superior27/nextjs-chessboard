@@ -31,17 +31,3 @@ function drawRow(quantRow: number, inverted: boolean = false)
     return rows;
 
 }
-
-function drawColumns()
-{
-    let colums = [];
-    for (let i = 1; i < 9; i++) {
-        const inverted = (i % 2 == 0) ? false : true;
-        colums.push(
-            <div className={styles.row}>
-                {drawRow(8, inverted)}
-            </div>
-        );
-    }
-    return colums;
-}
