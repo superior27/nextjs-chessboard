@@ -4,9 +4,9 @@ import styles from "./Row.module.css";
 export default function Row(props: any){
     return (
         <>
-        <div>
-        {drawColumns()}
-        </div>
+            <div className={styles.row}>
+                {drawRow(8, props.inverted)}
+            </div>
         </>
     );
 }

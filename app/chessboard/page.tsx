@@ -1,10 +1,10 @@
-import Row from "../../components/Row";
+import Board from "../../components/Board";
 
 
 export default function page(){
     return (
         <div>
-            <Row/>
+            <Board/>
         </div>
     );
 }
